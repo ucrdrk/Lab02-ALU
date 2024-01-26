@@ -50,11 +50,11 @@ module alu (
 
 always @(alu_control or A or B) begin
    case (alu_control)   // R Type Instruction 	
-        `ALU_AND :      result = A & A; 
+        `ALU_AND :      result = A & B; 
         `ALU_OR :       result = A | B; 
         `ALU_ADD :      result = A + B; 
         `ALU_SUBTRACT : result = A - B; 
-        `ALU_NOR :      result = ~(A | B); 
+        `ALU_NOR :      result = (A | B); 
 		
         `ALU_LESS_THAN :  
            result = ($signed(A) < $signed(B));
