@@ -1,7 +1,7 @@
 //=========================================================================
 // Name & Email must be EXACTLY as in Gradescope roster!
 // Name: 
-// Email: 
+// Email: aknig007@ucr.edu
 // 
 // Assignment name: 
 // Lab section: 
