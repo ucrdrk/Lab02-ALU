@@ -50,7 +50,7 @@ module alu (
 
 always @(alu_control or A or B) begin
    case (alu_control)   // R Type Instruction 	
-        `ALU_AND :      result = A & B; 
+        `ALU_AND :      result = A & A; 
         `ALU_OR :       result = A | B; 
         `ALU_ADD :      result = A + B; 
         `ALU_SUBTRACT : result = A - B; 
