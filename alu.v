@@ -54,7 +54,7 @@ always @(alu_control or A or B) begin
         `ALU_OR :       result = A | B; 
         `ALU_ADD :      result = A + B; 
         `ALU_SUBTRACT : result = A - B; 
-        `ALU_NOR :      result = (A | B); 
+        `ALU_NOR :      result = ~(A | B); 
 		
         `ALU_LESS_THAN :  
            result = ($signed(A) < $signed(B));
